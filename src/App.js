@@ -2,9 +2,12 @@ import './App.css';
 
 
 
+
+
 export default function App() {
   return (
-    <div className="WeatherApp">
+    <div className="App">
+      <div className="container">
       <header className="">
         <h1> Weather App </h1>
         
@@ -15,6 +18,7 @@ export default function App() {
           <a href="https://github.com/kingaboros/weather_app_react.git" target="_blank"> open sourced on GitHub </a>
         </p>
       </footer>
+      </div>
     </div>
   );
 }
