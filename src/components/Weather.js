@@ -12,46 +12,46 @@ export default function Weather () {
     <div className="weather"> 
       <h1> What's the weather like today? </h1>
 
-      <div class="search-bar">
-          <form id="search-form">
+      <div className="search-bar">
+          <form className="search-form">
             <input
               type="search"
               placeholder="change city here..."
               autofocus="on"
               autocomplete="off"
-              class="shadow-sm"
-              id="search-text-input"
+              className="shadow-sm"
+             className="search-text-input"
             />
             <input
               type="submit"
               value="GO"
-              class="search-button buttons shadow-sm"
+              className="search-button buttons shadow-sm"
             />
 
             <button
-              class="location-button buttons shadow-sm"
-              id="location-button"
+              className="location-button buttons shadow-sm"
+             className="location-button"
             >
-              <i class="fas fa-map-marker-alt location-button-icon"></i>
+              <i className="fas fa-map-marker-alt location-button-icon"></i>
             </button>
           </form>
         </div>
 
-        <div class="current-location">
-          <h2 class="city-name" id="city-name"></h2>
-          <p class="current-time">Last updated: <span id="date"></span></p>
-          <p class="weather-feature" id="weather-description"></p>
+        <div className="current-location">
+          <h2 className="city-name" className="city-name"></h2>
+          <p className="current-time">Last updated: <span className="date"></span></p>
+          <p className="weather-feature" className="weather-description"></p>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="clearfix main-temperature">
-              <img src="#" alt="" id="icon" class="float-left" />
-              <div class="float-right">
-                <span class="temperature" id="temperature"></span>
-                <small class="units">
-                  <a href="#" id="celsius-link" class="active"> &#176;C</a> |<a
+        <div className="row">
+          <div className="col-md-6">
+            <div className="clearfix main-temperature">
+              <img src="#" alt="" className="icon" className="float-left" />
+              <div className="float-right">
+                <span className="temperature" className="temperature"></span>
+                <small className="units">
+                  <a href="#" className="celsius-link" className="active"> &#176;C</a> |<a
                     href="#"
-                    id="fahrenheit-link"
+                   className="fahrenheit-link"
                     >&#176;F</a
                   >
                 </small>
@@ -59,10 +59,10 @@ export default function Weather () {
             </div>
           </div>
 
-          <div class="col-md-6">
-            <ul class="weather-characteristics">
-              <li><strong>Humidity:</strong> <span id="humidity"></span>%</li>
-              <li><strong>Wind:</strong> <span id="wind"></span> mph</li>
+          <div className="col-md-6">
+            <ul className="weather-characteristics">
+              <li><strong>Humidity:</strong> <span className="humidity"></span>%</li>
+              <li><strong>Wind:</strong> <span className="wind"></span> mph</li>
             </ul>
           </div>
         </div>
