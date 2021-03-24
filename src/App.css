@@ -1,8 +1,175 @@
-.weather{
-  border: 1px solid black;
+
+
+.weather {
+  display: block;
+  margin: 30px auto;
+  padding: 35px;
+  max-width: 960px;
+}
+
+.weather__container{
+  padding: 30px;
+  max-width: 1200px;
+  display: block;
+  margin-top: 10px;
+  border: 2px solid #fccbcb;
+  border-radius: 250px 5px 250px 5px;
+  padding: 100px;
+  box-shadow: 5px 5px 6px #ad9d9d52;
 
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Architects Daughter", cursive;
+  color: #b97272;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 50px;
+  margin: 0;
+}
+h3 {
+  text-align: center;
+}
+
+p {
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Searchbar Styling */
+
+.search-bar {
+  position: relative;
+  top: -75px;
+  bottom: 0;
+  left: 250px;
+}
+
+.searchbar__form { 
+  text-align: right;
+  width: 500px;
+  max-height: 0px;
+  font-size: 20px;
+  margin-right: 30px;
+          
+ }
+
+ .searchbar__input {
+   max-width: 200px;
+   padding: 20px 30px;
+   font-size: 20px;
+   color: #6f7d99;
+   border-style: none;
+   border-bottom: 1px solid #fccbcb;
+   background: transparent;
+   outline-width: 0;
+   box-shadow: 5px 5px 6px #ad9d9d52;
+   
+   
+ }
+
+ ::placeholder {
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 10px;
+  text-align: center;
+  color: #6f7d99;
+  font-size: 20px;
+  
+}
+
+.search-btn,
+.location-btn{
+  margin-left: 10px;
+  background: #fff;
+  border: 1.5px solid #fccbcb;
+  color: #b97272;
+  font-weight: 500;
+  padding: 20px 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 5px 5px 6px #ad9d9d52;
+ 
+
+}
+
+.search-btn:hover, 
+.location-btn:hover {
+  cursor: pointer;
+  background: #b97272;
+  transition: all 200ms ease-in-out;
+  color: white;
+  transition: ease-in-out;
+  border: 1.5px solid #fccbcb;
+  box-shadow: 5px 5px 6px #ad9d9d52;
+}
+
+/* Temperature Styling */
+
+.main-temperature img {
+  margin-right: 20px;
+  margin-left: -550px;
+  top: -1px;
+  height: 120px;
+  width: 120px;
+}
+.temperature {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #2e2727;
+  font-size: 80px;
+  text-align: right;
+}
+
+.main-temperature .units {
+  position: relative;
+  font-size: 20px;
+  top: -43px;
+}
+
+.main-temperature .active {
+  color: #2e2727;
+  cursor: default;
+}
+
+.main-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-characteristics {
+  text-align: left;
+  margin-left: 100px;
+  letter-spacing: 1px;
+}
+
+.current-location .weather-feature {
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+.coder {
+  margin-top: 0;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 100;
 }

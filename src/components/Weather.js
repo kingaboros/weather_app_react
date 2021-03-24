@@ -3,34 +3,29 @@ import '@fortawesome/fontawesome-free/js/all.js';
 export default function Weather () {
   return ( 
     
-    // search bar
-
-
-
-    // display city name
-
-    <div className="weather"> 
+      
+    
+    <div className="weather">
       <h1> What's the weather like today? </h1>
-
-      <div className="search-bar">
-          <form className="search-form">
+     
+      <div className="weather__container"> 
+        <div className="search-bar">
+          <form className="searchbar__form">
             <input
               type="search"
-              placeholder="change city here..."
-              autofocus="on"
+              placeholder="enter a city here..."
+              autoFocus="on"
               autocomplete="off"
-              className="shadow-sm"
-             className="search-text-input"
+              className="searchbar__input"
             />
             <input
               type="submit"
               value="GO"
-              className="search-button buttons shadow-sm"
+              className="search-btn"
             />
 
             <button
-              className="location-button buttons shadow-sm"
-             className="location-button"
+              className="location-btn"
             >
               <i className="fas fa-map-marker-alt location-button-icon"></i>
             </button>
@@ -38,16 +33,16 @@ export default function Weather () {
         </div>
 
         <div className="current-location">
-          <h2 className="city-name" className="city-name"></h2>
+          <h2 className="city-name">Manchester</h2>
           <p className="current-time">Last updated: <span className="date"></span></p>
-          <p className="weather-feature" className="weather-description"></p>
+          <p className="weather-description"></p>
         </div>
         <div className="row">
           <div className="col-md-6">
-            <div className="clearfix main-temperature">
+            <div className="clearfix main-temperature">icon
               <img src="#" alt="" className="icon" className="float-left" />
               <div className="float-right">
-                <span className="temperature" className="temperature"></span>
+                <span className="temperature">6</span>
                 <small className="units">
                   <a href="#" className="celsius-link" className="active"> &#176;C</a> |<a
                     href="#"
@@ -65,8 +60,9 @@ export default function Weather () {
               <li><strong>Wind:</strong> <span className="wind"></span> mph</li>
             </ul>
           </div>
-        </div>
+          </div> 
         <hr />
+        </div>
 
 
 
